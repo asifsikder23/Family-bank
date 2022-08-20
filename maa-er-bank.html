@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma er bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="flex items-center bg-gray-800 p-3 flex-wrap">
+        <a href="maa-er-bank.html" class="p-2 mr-4 inline-flex items-center">
+            <span class="text-2xl text-white font-bold uppercase">Ma er Bank</span>
+        </a>
+        <a href="baap-er-bank.html" class="p-2 mr-4 inline-flex items-center">
+          <span class="text-2xl text-white font-bold uppercase">Baap er Bank</span>
+        </a>
+        <button class="text-white flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler" data-target="#navigation">
+          <i class="material-icons">menu</i>
+        </button>
+        <div
+          class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+          id="navigation">
+          <div
+            class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
+            <a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+              <span>Home</span>
+            </a>
+            <a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+              <span>About</span>
+            </a>
+            <a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+              <span>Services</span>
+            </a>
+            <a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+              <span>Gallery</span>
+            </a>
+            <a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white">
+              <span>Profile</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Balance and tranaction -->
+    <main>
+        <section class="flex justify-center items-center">
+            <div>
+                <img src="ma images/giphy (1).gif" alt="">
+            </div>
+            <div>
+                <div class="grid grid-cols-1 gap-3 w-80 mx-auto">
+                    <div class="bg-yellow-400 drop-shadow-lg text-white p-4 rounded-2xl">
+                        <h4 class="text-3xl">Deposit</h4>
+                        <h2 class="text-4xl font-medium">$ <span id="deposit-total">00</span> </h2>
+                    </div>
+                    <div class="bg-green-400 drop-shadow-lg text-white p-4 rounded-2xl">
+                        <h4 class="text-3xl">Withdraw</h4>
+                        <h2 class="text-4xl font-medium">$ <span id="withdraw-total">00</span> </h2>
+                    </div>
+                    <div class="bg-blue-400 drop-shadow-lg text-white p-4 rounded-2xl">
+                        <h4 class="text-3xl">Balance</h4>
+                        <h2 class="text-4xl font-medium">$ <span id="balance-total">5000</span> </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- deposit and withdraw -->
+        <section class="w-3/4 mx-auto">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-red-400 hover:bg-red-500 p-8 rounded-2xl">
+                    <h3 class="text-4xl text-white pb-3">Your Deposit</h3>
+                    <input class="rounded-md w-3/4 p-2 block" type="text" name="" id="deposite-field" placeholder="$ Amount you want to deposit">
+                    <button id="btn-deposit" class="bg-blue-800 hover:bg-blue-600 rounded-md text-white px-3 py-1 mt-4">Deposit</button>
+                </div>
+                <div class="bg-violet-400 hover:bg-violet-500 p-8 rounded-2xl">
+                    <h3 class="text-4xl text-white pb-3">Your Withdraw</h3>
+                    <input class="rounded-md w-3/4 p-2 block" type="text" name="" id="withdraw-field" placeholder="$ Amount you want to withdraw">
+                    <button id="btn-withdraw" class="bg-rose-800 hover:bg-rose-600 rounded-md text-white px-3 py-1 mt-4">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="ma js/deposit.js"></script>
+    <script src="/ma js/withdraw.js"></script>
+</body>
+</html>
