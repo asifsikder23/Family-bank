@@ -14,7 +14,7 @@ const password = paswordField.value;
 // dangter : don't verify email password on the client side
 // step 4 : verify email and pasword and heck whether valid user or not
 if(email === 'asif@gmail.com' && password === 'asif221196'){
-    window.location.href = 'ma-er-bank.html';
+    window.location.href = 'maaErBank.html';
 }
 else{
     alert('Tui password vule gesos!!! Toke ami tejjo sontan korlam')
